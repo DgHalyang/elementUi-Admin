@@ -1,0 +1,46 @@
+.home {
+    .right-box {
+        margin-left:200px;
+        // 过度动画
+        transition: all 0.5s;
+        &.isCollapse {
+            margin-left: 64px;
+        }
+        .slider-nav {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .group {
+                display: flex;
+                align-items: center;
+                .breadcrumb {
+                    margin-left: 30px;
+                }
+            }
+            .user-info {
+                cursor: pointer;
+                text-align: center;
+                position: fixed;
+                right: 0;
+                top: 20px;
+                li {
+                    padding: 12px 20px;
+                }
+                li:not(:first-child) {
+                    display: none;
+                    &:hover {
+                        background-color: #eee;
+                        color: #999;
+                        font-weight: bold;
+                    }
+                }
+                &:hover{
+                    li {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
